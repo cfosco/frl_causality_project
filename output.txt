@@ -1,0 +1,250 @@
+
+i, j: 319 320
+stop frame: 97123, next start_frame: 97089
+current verb_noun: scoop rice, next verb_noun: put-down spatula
+stop frame greater than next start frame
+i, j: 325 326
+stop frame: 98112, next start_frame: 98098
+current verb_noun: wash drainer, next verb_noun: turn-off tap
+stop frame greater than next start frame
+looking at group P01_02 with len 145
+i, j: 5 6
+stop frame: 1515, next start_frame: 1471
+current verb_noun: take sponge, next verb_noun: squeeze sponge
+stop frame greater than next start frame
+i, j: 7 8
+stop frame: 1638, next start_frame: 1605
+current verb_noun: turn-on tap, next verb_noun: rinse sponge
+stop frame greater than next start frame
+i, j: 8 9
+stop frame: 1755, next start_frame: 1722
+current verb_noun: rinse sponge, next verb_noun: take liquid:washing:up
+stop frame greater than next start frame
+i, j: 11 12
+stop frame: 2132, next start_frame: 2078
+current verb_noun: squeeze sponge, next verb_noun: take fork
+stop frame greater than next start frame
+i, j: 11 13
+stop frame: 2132, next start_frame: 2129
+current verb_noun: squeeze sponge, next verb_noun: wash fork
+stop frame greater than next start frame
+i, j: 12 13
+stop frame: 2142, next start_frame: 2129
+current verb_noun: take fork, next verb_noun: wash fork
+stop frame greater than next start frame
+i, j: 17 18
+stop frame: 3068, next start_frame: 3053
+current verb_noun: take plate, next verb_noun: wash plate
+stop frame greater than next start frame
+i, j: 18 19
+stop frame: 3631, next start_frame: 3627
+current verb_noun: wash plate, next verb_noun: wash plate
+stop frame greater than next start frame
+i, j: 19 20
+stop frame: 3805, next start_frame: 3789
+current verb_noun: wash plate, next verb_noun: put-down plate
+stop frame greater than next start frame
+i, j: 22 23
+stop frame: 4057, next start_frame: 4042
+current verb_noun: turn-on tap, next verb_noun: rinse spatula
+stop frame greater than next start frame
+i, j: 23 24
+stop frame: 4162, next start_frame: 4159
+current verb_noun: rinse spatula, next verb_noun: wash spatula
+stop frame greater than next start frame
+i, j: 24 25
+stop frame: 4639, next start_frame: 4570
+current verb_noun: wash spatula, next verb_noun: wash spatula
+stop frame greater than next start frame
+i, j: 25 26
+stop frame: 4873, next start_frame: 4807
+current verb_noun: wash spatula, next verb_noun: put-down spatula
+stop frame greater than next start frame
+i, j: 27 28
+stop frame: 4975, next start_frame: 4974
+current verb_noun: take colander, next verb_noun: wash colander
+stop frame greater than next start frame
+i, j: 28 29
+stop frame: 5300, next start_frame: 5284
+current verb_noun: wash colander, next verb_noun: put-down colander
+stop frame greater than next start frame
+i, j: 31 32
+stop frame: 5743, next start_frame: 5742
+current verb_noun: wash saucepan, next verb_noun: wash saucepan
+stop frame greater than next start frame
+i, j: 34 35
+stop frame: 6677, next start_frame: 6550
+current verb_noun: take colander, next verb_noun: put-down saucepan
+stop frame greater than next start frame
+i, j: 34 36
+stop frame: 6677, next start_frame: 6645
+current verb_noun: take colander, next verb_noun: put-down colander
+stop frame greater than next start frame
+i, j: 35 36
+stop frame: 6654, next start_frame: 6645
+current verb_noun: put-down saucepan, next verb_noun: put-down colander
+stop frame greater than next start frame
+i, j: 46 47
+stop frame: 9287, next start_frame: 9282
+current verb_noun: take grater, next verb_noun: wash grater
+stop frame greater than next start frame
+i, j: 47 48
+stop frame: 9423, next start_frame: 9340
+current verb_noun: wash grater, next verb_noun: wash grater
+stop frame greater than next start frame
+i, j: 48 49
+stop frame: 9816, next start_frame: 9803
+current verb_noun: wash grater, next verb_noun: put-down sponge
+stop frame greater than next start frame
+i, j: 53 54
+stop frame: 10412, next start_frame: 10378
+current verb_noun: wash spoon, next verb_noun: put-down sponge
+stop frame greater than next start frame
+i, j: 55 56
+stop frame: 10529, next start_frame: 10521
+current verb_noun: turn-on tap, next verb_noun: rinse hand
+stop frame greater than next start frame
+i, j: 60 61
+stop frame: 12030, next start_frame: 12025
+current verb_noun: put-down grater, next verb_noun: take colander
+stop frame greater than next start frame
+i, j: 62 63
+stop frame: 12639, next start_frame: 12489
+current verb_noun: rinse colander, next verb_noun: rinse colander
+stop frame greater than next start frame
+i, j: 64 65
+stop frame: 13105, next start_frame: 13101
+current verb_noun: put-down colander, next verb_noun: take spatula
+stop frame greater than next start frame
+i, j: 69 70
+stop frame: 14772, next start_frame: 14739
+current verb_noun: rinse saucepan, next verb_noun: put-down saucepan
+stop frame greater than next start frame
+i, j: 71 72
+stop frame: 15204, next start_frame: 15145
+current verb_noun: empty pan, next verb_noun: empty pan
+stop frame greater than next start frame
+i, j: 72 73
+stop frame: 15234, next start_frame: 15226
+current verb_noun: empty pan, next verb_noun: rinse pan
+stop frame greater than next start frame
+i, j: 73 74
+stop frame: 15686, next start_frame: 15240
+current verb_noun: rinse pan, next verb_noun: wash pan
+stop frame greater than next start frame
+i, j: 73 75
+stop frame: 15686, next start_frame: 15404
+current verb_noun: rinse pan, next verb_noun: adjust top
+stop frame greater than next start frame
+i, j: 73 76
+stop frame: 15686, next start_frame: 15477
+current verb_noun: rinse pan, next verb_noun: wash pan
+stop frame greater than next start frame
+i, j: 74 75
+stop frame: 15779, next start_frame: 15404
+current verb_noun: wash pan, next verb_noun: adjust top
+stop frame greater than next start frame
+i, j: 74 76
+stop frame: 15779, next start_frame: 15477
+current verb_noun: wash pan, next verb_noun: wash pan
+stop frame greater than next start frame
+i, j: 74 77
+stop frame: 15779, next start_frame: 15750
+current verb_noun: wash pan, next verb_noun: rinse pan
+stop frame greater than next start frame
+i, j: 75 76
+stop frame: 15496, next start_frame: 15477
+current verb_noun: adjust top, next verb_noun: wash pan
+stop frame greater than next start frame
+i, j: 76 77
+stop frame: 15852, next start_frame: 15750
+current verb_noun: wash pan, next verb_noun: rinse pan
+stop frame greater than next start frame
+i, j: 77 78
+stop frame: 16254, next start_frame: 16235
+current verb_noun: rinse pan, next verb_noun: wash pan
+stop frame greater than next start frame
+i, j: 79 80
+stop frame: 17152, next start_frame: 16752
+current verb_noun: rinse pan, next verb_noun: rinse pan
+stop frame greater than next start frame
+i, j: 81 82
+stop frame: 17458, next start_frame: 17404
+current verb_noun: put-down pan, next verb_noun: take knife
+stop frame greater than next start frame
+i, j: 82 83
+stop frame: 17486, next start_frame: 17479
+current verb_noun: take knife, next verb_noun: rinse knife
+stop frame greater than next start frame
+i, j: 84 85
+stop frame: 17773, next start_frame: 17729
+current verb_noun: take fork, next verb_noun: put-down knife
+stop frame greater than next start frame
+i, j: 85 86
+stop frame: 17818, next start_frame: 17779
+current verb_noun: put-down knife, next verb_noun: rinse fork
+stop frame greater than next start frame
+i, j: 91 92
+stop frame: 18670, next start_frame: 18556
+current verb_noun: put-down plate, next verb_noun: take board:cutting
+stop frame greater than next start frame
+i, j: 91 93
+stop frame: 18670, next start_frame: 18603
+current verb_noun: put-down plate, next verb_noun: rinse board:cutting
+stop frame greater than next start frame
+i, j: 95 96
+stop frame: 19620, next start_frame: 19504
+current verb_noun: put-down board:cutting, next verb_noun: take sponge
+stop frame greater than next start frame
+i, j: 95 97
+stop frame: 19620, next start_frame: 19602
+current verb_noun: put-down board:cutting, next verb_noun: squeeze sponge
+stop frame greater than next start frame
+i, j: 96 97
+stop frame: 19632, next start_frame: 19602
+current verb_noun: take sponge, next verb_noun: squeeze sponge
+stop frame greater than next start frame
+i, j: 98 99
+stop frame: 20025, next start_frame: 19998
+current verb_noun: squeeze sponge, next verb_noun: take rag
+stop frame greater than next start frame
+i, j: 102 103
+stop frame: 20952, next start_frame: 20928
+current verb_noun: squeeze rag, next verb_noun: wipe sink
+stop frame greater than next start frame
+i, j: 102 104
+stop frame: 20952, next start_frame: 20942
+current verb_noun: squeeze rag, next verb_noun: wipe sink
+stop frame greater than next start frame
+i, j: 103 104
+stop frame: 21138, next start_frame: 20942
+current verb_noun: wipe sink, next verb_noun: wipe sink
+stop frame greater than next start frame
+i, j: 104 105
+stop frame: 21540, next start_frame: 21144
+current verb_noun: wipe sink, next verb_noun: squeeze rag
+stop frame greater than next start frame
+i, j: 106 107
+stop frame: 21931, next start_frame: 21892
+current verb_noun: wipe counter, next verb_noun: wipe counter
+stop frame greater than next start frame
+i, j: 114 115
+stop frame: 24447, next start_frame: 24256
+current verb_noun: wipe cooker, next verb_noun: wipe cooker
+stop frame greater than next start frame
+i, j: 117 118
+stop frame: 24947, next start_frame: 24809
+current verb_noun: wipe counter, next verb_noun: wipe sink
+stop frame greater than next start frame
+i, j: 118 119
+stop frame: 25074, next start_frame: 25059
+current verb_noun: wipe sink, next verb_noun: turn-on tap
+stop frame greater than next start frame
+i, j: 119 120
+stop frame: 25171, next start_frame: 25159
+current verb_noun: turn-on tap, next verb_noun: rinse rag
+stop frame greater than next start frame
+i, j: 123 124
+stop frame: 25842, next start_frame: 25828
+current verb_noun: wipe sink, next verb_noun: wipe sink
+stop frame greater than next start frame
