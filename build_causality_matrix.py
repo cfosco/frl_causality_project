@@ -130,7 +130,7 @@ if __name__ == "__main__":
 
     # Parse arguments
     parser = argparse.ArgumentParser(description="Build causality matrix")
-    parser.add_argument("--train_annotations", type=str, default='../epic-kitchens-100-annotations/EPIC_100_train.csv', help="Path to train annotations")
+    parser.add_argument("--train_annotations", type=str, default='./EPIC_100_train.csv', help="Path to train annotations")
     parser.add_argument("--output_path", type=str, default='./causality_matrix.pkl', help="Path to output causality matrix")
     args = parser.parse_args()
 
