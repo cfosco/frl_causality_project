@@ -1,4 +1,5 @@
 import pandas as pd
+from decays import linear_decay
 import numpy as np
 import os
 import sys
@@ -7,7 +8,7 @@ import time
 import json
 import pickle
 from tqdm import tqdm
-from IPython.display import display
+from decays import *
 
 def build_causality_matrix(train_annotations):
     '''Build a matrix where each row and column are combinations of verb and nouns, 
@@ -130,14 +131,14 @@ if __name__ == "__main__":
     # Parse arguments
     parser = argparse.ArgumentParser(description="Build causality matrix")
     parser.add_argument("--train_annotations", type=str, default='../epic-kitchens-100-annotations/EPIC_100_train.csv', help="Path to train annotations")
-    parser.add_argument("--output_path", type=str, default='./caus_mat.pkl', help="Path to output causality matrix")
+    parser.add_argument("--output_path", type=str, default='./causality_matrix.pkl', help="Path to output causality matrix")
     args = parser.parse_args()
 
     # Load train annotations
     train_annotations = pd.read_csv(args.train_annotations)
 
     # Build causality matrix
-    causality_matrix = build_causality_matrix(train_annotations)
+    causality_matrix = build_causality_matrix_weighted(train_annotations, weight_fcn=linear_decay)
 
     # Save causality matrix
     with open(args.output_path, 'wb') as f:
