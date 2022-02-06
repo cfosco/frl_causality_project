@@ -165,14 +165,25 @@ if __name__ == "__main__":
     # Parse arguments
     parser = argparse.ArgumentParser(description="Build causality matrix")
     parser.add_argument("--train_annotations", type=str, default='./EPIC_100_train.csv', help="Path to train annotations")
-    parser.add_argument("--output_path", type=str, default='./causality_matrix.pkl', help="Path to output causality matrix")
+    parser.add_argument("--output_path", type=str, default='./causality_matrix_weighted_idx.pkl', help="Path to output causality matrix")
+    parser.add_argument("--decay", type=str, default='exp', help="Decay function for weighting next actions according to distance")
     args = parser.parse_args()
 
     # Load train annotations
     train_annotations = pd.read_csv(args.train_annotations)
 
+    # Define decay function
+    weight_fcn = None
+    if args.decay == 'exp':
+        weight_fcn = exponential_decay
+    elif args.decay == 'linear':
+        weight_fcn = linear_decay
+
+    print("Building causality matrix with weight function %s" % args.decay)
+        
+
     # Build causality matrix
-    causality_matrix = build_causality_matrix_weighted(train_annotations, weight_fcn=exponential_decay)
+    causality_matrix = build_causality_matrix_weighted_index(train_annotations, weight_fcn=weight_fcn)
 
     # Save causality matrix
     with open(args.output_path, 'wb') as f:
