@@ -47,7 +47,7 @@ def build_causality_matrix(train_annotations):
     return causality_matrix
 
 
-def build_causality_matrix_weighted(train_annotations, weight_fcn, causality_matrix = None):
+def build_causality_matrix_weighted_time(train_annotations, weight_fcn, causality_matrix = None):
     '''Build a matrix where each row and column are combinations of verb and nouns, 
     and each cell corresponds to a sum of all verb_nouns that come after, weighted by the weight_fcn.'''
 
@@ -81,6 +81,40 @@ def build_causality_matrix_weighted(train_annotations, weight_fcn, causality_mat
                 causality_matrix[verb_noun][next_verb_noun] += weight_fcn(max(0,time2-time1))
 
     return causality_matrix
+
+def build_causality_matrix_weighted_index(train_annotations, weight_fcn, causality_matrix = None):
+    '''Build a matrix where each row and column are combinations of verb and nouns, 
+    and each cell corresponds to a sum of all verb_nouns that come after, weighted by the weight_fcn.'''
+
+    train_annotations = prepare_EK_df(train_annotations)
+
+    # Get all unique combinations of verb and noun
+    unique_nv_combos = get_unique_nv_combos(train_annotations)
+
+    # Make dict of dict representing causality matrix
+    if causality_matrix is None:
+        causality_matrix = init_causality_matrix(unique_nv_combos)
+
+    print("Causality matrix initialized")
+
+    # Iterate over all unique video_ids and count the number of times each combination appears after another
+    for vid, g in tqdm(train_annotations.groupby("video_id")):
+        print("looking at group %s with len %d" %(vid,len(g)))
+        for i, (idx, row) in enumerate(g.iterrows()):
+            # if i+1 >= len(g): print("breaking");break
+            verb_noun = row['verb_nouns']
+            for j in range(i+1, len(g)):
+                if row['stop_frame'] > g.iloc[j]['start_frame']+50: # The +30 adds 30 frames of leeway in case an action that does happen afterwards is incorrectly annotated as happening right before the end of the previous one 
+                    # print("i, j:", i, j)
+                    # print("stop frame: %d, next start_frame: %d" % (row['stop_frame'], g.iloc[j]['start_frame']))
+                    # print("current verb_noun: %s, next verb_noun: %s" % (row['verb_nouns'], g.iloc[j]['verb_nouns']))
+                    # print("stop frame greater than next start frame")
+                    continue
+                next_verb_noun = g.iloc[j]['verb_nouns']
+                causality_matrix[verb_noun][next_verb_noun] += weight_fcn(max(0,j-i))
+
+    return causality_matrix
+
 
 def init_causality_matrix(unique_nv_combos):
     causality_matrix = {}
@@ -138,7 +172,7 @@ if __name__ == "__main__":
     train_annotations = pd.read_csv(args.train_annotations)
 
     # Build causality matrix
-    causality_matrix = build_causality_matrix_weighted(train_annotations, weight_fcn=linear_decay)
+    causality_matrix = build_causality_matrix_weighted(train_annotations, weight_fcn=exponential_decay)
 
     # Save causality matrix
     with open(args.output_path, 'wb') as f:
